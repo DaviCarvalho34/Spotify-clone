@@ -65,7 +65,7 @@
     
     <section class="lista">     
       <div class="buttons-top">
-        <i class="fas fa-play-circle botao-play button-top"></i>
+        <i class="fas fa-play-circle button-top"></i>
         <i class="fa-solid fa-heart fav"></i>
         <i class="fa-solid fa-ellipsis options"></i>
       </div>
@@ -148,7 +148,7 @@
             <i class="fas fa-step-backward setas anterior"></i>
           </li>
           <li>
-            <i class="fas fa-play-circle botao-play "></i>
+            <i class="fas fa-play-circle botao-play"></i>
             <i class="fas fa-pause-circle botao-pause"></i>
           </li>
          
@@ -188,6 +188,7 @@
     </div>
     </div>  
   </section>
+  <audio src="musicas/sun-killer.mp3"></audio>
   <script src="js/app.js"></script>
 </body>
 </html>

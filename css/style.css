@@ -77,7 +77,7 @@ body {
   color: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
+    rgb(9, 86, 121) 35%,
     rgba(179, 96, 240, 1) 88%
   );
 }
@@ -488,7 +488,7 @@ main .album-content .album-container .descricao-album .album{
 
 progress {
   height: 6px;
-  width: 10%;
+  width: 0;
 }
 
 .ponto {
