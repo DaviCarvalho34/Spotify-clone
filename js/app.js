@@ -21,15 +21,28 @@ tempoDecorrido.style.color = '#ddd3d3';
 let duracaoMusica = document.querySelector('.tempo .final');
 duracaoMusica.style.color = '#ddd3d3';
 duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration));
+let volumeController = document.querySelector('#volume');
+
 
 let nomeMusica = document.querySelector('.descricao h4');
 let nomeArtista = document.querySelector('.descricao span');
 
+const inputSlider = document.querySelector('#volume');
+
+inputSlider.oniput = (()=>{
+  let value = inputSlider.value;
+});
+
+console.log(volume);
 document.querySelector('.botao-play').addEventListener('click', tocarMusica);
 
 document.querySelector('.botao-pause').addEventListener('click', pausarMusica);
 
 musica.addEventListener('timeupdate', atualizarBarra);
+
+volume.addEventListener('change',function(e){
+  musica.volume = e.currentTarget.value / 100;
+})
 
 document.querySelector('.anterior').addEventListener('click', () => {
   musicaIndex--; 

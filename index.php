@@ -182,9 +182,15 @@
           <i class="fa-solid fa-volume-high alto"></i>
         </li>
       </ul>
-      <div class="barra volume">                   
-        <progress value="0" max="1"></progress>
-        <div class="ponto"></div>            
+      <div class="barra volume">  
+                        
+        <input id="volume" type="range">
+        <div class="barra-v">   
+                  
+          <progress id="prog-volume" value="0" max="1"></progress>
+                    
+        </div> 
+                  
     </div>
     </div>  
   </section>
