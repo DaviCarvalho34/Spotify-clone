@@ -27,11 +27,7 @@ let volumeController = document.querySelector('#volume');
 let nomeMusica = document.querySelector('.descricao h4');
 let nomeArtista = document.querySelector('.descricao span');
 
-const inputSlider = document.querySelector('#volume');
 
-inputSlider.oniput = (()=>{
-  let value = inputSlider.value;
-});
 
 console.log(volume);
 document.querySelector('.botao-play').addEventListener('click', tocarMusica);
@@ -62,6 +58,29 @@ document.querySelector('.proxima').addEventListener('click', () => {
   renderizarMusica(musicaIndex);
   console.log(musica);
 });
+
+function rangeSlide(value){
+  let vol = document.querySelector('#volume').innerHTML = value;
+  let mudo = document.querySelector('.mudo');
+  let baixo = document.querySelector('.baixo');
+  let alto = document.querySelector('.alto');
+
+  if(vol == 0){
+    mudo.style.display = 'block';
+    baixo.style.display = 'none';
+    alto.style.display = 'none';
+  }else if(vol > 0 & vol < 50){
+    baixo.style.display = 'block';
+    mudo.style.display = 'none';
+    alto.style.display = 'none';
+  }else if(vol > 50 & vol <90){
+    alto.style.display = 'block';
+    baixo.style.display = 'none';
+    mudo.style.display = 'none';
+  }
+
+  console.log(vol);
+}
 
 function renderizarMusica(musicaIndex){
   musica.setAttribute('src', musicas[musicaIndex].source);
