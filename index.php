@@ -153,7 +153,7 @@
           </li>
          
           <li>
-            <i class="fas fa-step-forward setas proxima setas"></i>
+            <i class="fas fa-step-forward setas proxima"></i>
           </li>
           <li>
             <i class="fa-solid fa-arrow-rotate-left repeat"></i>

@@ -466,7 +466,7 @@ main .album-content .album-container .descricao-album .album{
 
 .inicio p,
 .final p {
-  color: rgb(221, 211, 211);
+  color: #ddd3d3;
   font-size: 0.9rem;
 }
 
