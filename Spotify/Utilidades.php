@@ -23,6 +23,8 @@
 		{
 			echo "<script>container.classList.remove('sign-up-mode')</script>";
 		}
+
+		
 		
 	}
 ?>

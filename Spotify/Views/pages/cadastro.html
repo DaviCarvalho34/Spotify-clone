@@ -34,10 +34,10 @@
      
       <div class="form-bottom">
         <label for="email">Qual ó seu e-mail?</label>
-        <input type="email" id="email" name="email_login" placeholder="Endereço de e-mail ou nome de usuário">
+        <input type="email" id="email" name="email" placeholder="Endereço de e-mail ou nome de usuário">
         <a>Usar número de telefone</a>
         <label for="email_confirm">Confirmar o seu e-mail</label>
-        <input type="email" id="senha" name="email_confirm" placeholder="Insira seu e-mail novamente.">
+        <input type="email" id="email_confirm" name="email_confirm" placeholder="Insira seu e-mail novamente.">
 
         <label for="senha">Crie uma senha</label>
         <input type="password" id="senha" name="senha" placeholder="Crie uma senha.">
@@ -52,12 +52,12 @@
             
             <div class="dia">
               <label>Dia</label>
-              <input type="text" id="dia" placeholder="DD">
+              <input type="text" name="dia" id="dia" placeholder="DD">
             </div>
 
             <div class="mes">
               <label>Mês</label>
-              <select id="mes">
+              <select name="mes" id="mes">
                 <option>Janeiro</option>
                 <option>Fevereiro</option>
                 <option>Março</option>
@@ -75,7 +75,7 @@
 
             <div class="ano">
               <label>Ano</label>
-              <input type="text" id="ano" placeholder="AAAA">
+              <input type="text" name="ano" id="ano" placeholder="AAAA">
             </div>
     
         </div><!--nascimento container-->
@@ -84,17 +84,17 @@
         <div class="genero-container">
           
           <div class="masculino">
-            <input type="radio" id="masculino">
+            <input type="radio" id="masculino" name="sexo" value="masculino">
             <label for="masculino">Masculino</label>
           </div>
 
           <div class="feminino">
-            <input type="radio" id="feminino">
+            <input type="radio" id="feminino" name="sexo" value="feminino">
             <label for="feminino">Feminino</label>
           </div>
 
           <div class="nao-binario">
-            <input type="radio" id="nao_binario">
+            <input type="radio" id="nao_binario" name="sexo" value="nao-binario">
             <label for="nao_binario">Não binário</label>
           </div>
         </div><!--genero container-->
@@ -118,6 +118,7 @@
         <div class="inscrever-se">
           <span>Para saber mais sobre como o Spotify coleta, utiliza, compartilha e protege seus dados pessoais, leia a <a href="https://www.spotify.com/br/legal/privacy-policy/">Política de Privacidade do Spotfy.</a></span>
           <button type="submit">INSCREVER-SE</button>
+          <input type="hidden" name="registrar">
           <span class="last-text">Já tem uma conta? <a href="{{constant('INCLUDE_PATH')}}">Faça Login.</a></span>
         </div>
 
