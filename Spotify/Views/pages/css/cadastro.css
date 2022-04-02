@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Gotham", sans-serif;
+}
+
+[type="checkbox"]::before{
+  content:"";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  outline: 1px solid #aaa;
+  border-radius: 2px;
+  background: #fff;
+}
+
+[type="checkbox"]:checked::after{
+  content:"";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  outline: 1px solid #dbdada;
+  border-radius: 2px;
+  background-image: url("../assets/png-transparent-white-and-green-check-logo-check-mark-emoji-computer-icons-emoticon-tick-angle-text-rectangle.png");
+  background-size: contain;
+  
+}
+
+body {
+  display:flex;
+  flex-direction: column;
+  font-family: "Gotham", sans-serif;
+}
+
+header{
+  width: 100%;
+  height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo img{
+  width: 140px;
+}
+
+.forms-container{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 30px;
+  width: 450px;
+  
+ 
+}
+
+.forms-container .form-top{
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.forms-container .form-top span{
+  font-weight: bold;
+  font-size: 1.9rem;
+  text-align: center;
+}
+
+.forms-container .form-top .botao-facebook,
+.forms-container .form-top .botao-apple,
+.forms-container .form-top .botao-google
+{
+  width: 87%;
+  height: 45px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.forms-container .form-top .botao-facebook{
+  margin-top: 15px;
+  color: white;
+  background-color: #3b5998;
+  border: 1px solid #b5b4b4;
+}
+
+
+.forms-container .form-top .botao-facebook i{
+  margin-right: 3px;
+  color: white;
+  opacity: 0.9;
+  font-size: 20px;
+}
+
+.forms-container .form-top .botao-apple{
+  color: #ffffff;
+  background-color: #1e1e1e;
+  border: 1px solid #b5b4b4;
+}
+
+.forms-container .form-top .botao-apple i{
+  margin-right: 3px;
+  color: white;
+  
+  font-size: 20px;
+}
+
+.forms-container .form-top .botao-google{
+  color: #575757;
+  background-color: #ffffff;
+  border: 2px solid #575757;
+}
+
+.forms-container .form-top .botao-google i{
+  margin-right: 3px;
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+}
+
+.forms-container .ou{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.forms-container .ou hr{
+  width: 50%;
+  margin: 20px;
+  align-self: flex-start;
+}
+
+.forms-container .form-bottom{
+  display: flex;
+  flex-direction: column;
+}
+
+.forms-container .form-bottom label{
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+
+.forms-container .form-bottom #email,
+.forms-container .form-bottom #senha,
+.forms-container .form-bottom #email_confirm,
+.forms-container .form-bottom #perfil
+{
+  margin-top: 10px;
+  margin-bottom: 28px;
+  border-radius: 5px;
+  border: 1px solid #757373;
+  padding-left: 8px;
+  font-size: 1rem;
+  width: 100%;
+  height: 50px;
+}
+
+.forms-container .form-bottom a{
+  font-size: 14px;
+  margin-top: -20px;
+  margin-bottom: 28px;
+}
+
+.nascimento-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.nascimento-container .labels{
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.nascimento-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ 
+}
+
+.nascimento-container .dia label,
+.nascimento-container .mes label,
+.nascimento-container .ano label
+{
+  font-weight: lighter;
+}
+
+.nascimento-container .dia{
+  width: 18%;
+  
+}
+.nascimento-container .mes{
+  width: 45%;
+}
+
+.nascimento-container .ano{
+  width: 25%;
+}
+
+
+
+.nascimento-container  input,
+.nascimento-container select
+{
+  margin-top: 10px;
+  margin-bottom: 28px;
+  border-radius: 5px;
+  border: 1px solid #757373;
+  padding-left: 8px;
+  font-size: 1rem;
+  height: 50px;
+}
+
+.forms-container .text-idade{
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.nascimento-container .dia,
+.nascimento-container .mes,
+.nascimento-container .ano
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.nascimento-container #dia{
+  width: 100%;
+}
+
+.nascimento-container #ano{
+  width: 100%;
+}
+.nascimento-container #mes{
+  width: 100%;
+}
+
+.genero{
+  font-weight: bolder;
+  font-size: 0.9rem;
+}
+
+.genero-container{
+  margin-top: 15px;
+  width: 74%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.genero-container .masculino label,
+.genero-container .feminino label,
+.genero-container .nao-binario label
+{
+  font-weight: lighter;
+  margin-left: 10px;
+}
+
+.forms-container .form-bottom .checks{
+  display: flex;
+  flex-direction: column;
+}
+
+.forms-container .form-bottom .checks .first,
+.forms-container .form-bottom .checks .second,
+.forms-container .form-bottom .checks .third
+{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.forms-container .form-bottom .checks a{
+  color: #2cba52;
+  text-decoration: underline;
+}
+
+.forms-container .form-bottom .checks .first label,
+.forms-container .form-bottom .checks .second label,
+.forms-container .form-bottom .checks .third label{
+  font-weight: lighter;
+  margin-left: 10px;
+}
+
+.forms-container .inscrever-se span{
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+
+
+.forms-container .form-bottom .inscrever-se button{
+  margin-top: 15px;
+  width: 40%;
+  height: 60px;
+  border: none;
+  color: rgb(0, 0, 0);
+  background-color: #32d95f;
+  border-radius: 30px;
+  letter-spacing: .1rem;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.forms-container .form-bottom .inscrever-se a{
+  color: #2cba52;
+  text-decoration: underline;
+}
+
+.forms-container .form-bottom .inscrever-se .last-text{
+  margin-top: 15px;
+  padding-bottom: 200px;
+  font-size: 1rem;
+}
+
+
+.forms-container .form-bottom .entrar input[type=checkbox]{
+  border: 2px solid red;
+}
+
+
+.forms-container .form-bottom .inscrever-se{
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+.forms-container .form-top button:hover{
+  width: 88%;
+  
+}
+
+.forms-container .inscrever-se button:hover{
+  width: 41%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

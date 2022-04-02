@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/40f6c6ef52.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+  <link href="{{constant('INCLUDE_PATH_STATIC') ~ 'css/cadastro.css'}}" rel="stylesheet" type="text/css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="header-logo">
+      <img src="{{constant('INCLUDE_PATH_STATIC') ~ 'assets/Spotify_Logo_Black.png'}}">
+    </div><!--header logo-->
+  </header><!--Header-->
+
+  <section class="forms-container">
+    <form action="" method="post">
+      <div class="form-top">
+        <span>Inscreva-se grátis e comece a curtir.</span>
+        <button class="botao-facebook" type="submit"><i class="fa-brands fa-facebook"></i> Inscrever-se com o facebook</i></button>        
+        <button class="botao-google" type="submit"><i class="fa-brands fa-google"></i> Inscrever-se com o google</i></button>        
+      </div><!--form top-->
+      
+      <div class="ou">
+        <hr>
+        <span>OU</span>
+        <hr>
+      </div>
+     
+      <div class="form-bottom">
+        <label for="email">Qual ó seu e-mail?</label>
+        <input type="email" id="email" name="email_login" placeholder="Endereço de e-mail ou nome de usuário">
+        <a>Usar número de telefone</a>
+        <label for="email_confirm">Confirmar o seu e-mail</label>
+        <input type="email" id="senha" name="email_confirm" placeholder="Insira seu e-mail novamente.">
+
+        <label for="senha">Crie uma senha</label>
+        <input type="password" id="senha" name="senha" placeholder="Crie uma senha.">
+
+        <label for="perfil">Como devemos chamar você</label>
+        <input type="text" id="perfil" name="nome_perfil" placeholder="Insira um nome de perfil.">
+        <a>Isso será exibido no seu perfil</a>
+
+        <span class="text-idade">Qual a sua data de nascimento?</span>
+
+        <div class="nascimento-container">
+            
+            <div class="dia">
+              <label>Dia</label>
+              <input type="text" id="dia" placeholder="DD">
+            </div>
+
+            <div class="mes">
+              <label>Mês</label>
+              <select id="mes">
+                <option>Janeiro</option>
+                <option>Fevereiro</option>
+                <option>Março</option>
+                <option>Abril</option>
+                <option>Maio</option>
+                <option>Junho</option>
+                <option>Julho</option>
+                <option>Agosto</option>
+                <option>Setembro</option>
+                <option>Outubro</option>
+                <option>Novembro</option>
+                <option>Dezembro</option>
+              </select>
+            </div>
+
+            <div class="ano">
+              <label>Ano</label>
+              <input type="text" id="ano" placeholder="AAAA">
+            </div>
+    
+        </div><!--nascimento container-->
+
+        <span class="genero">Qual é o seu genêro?</span>
+        <div class="genero-container">
+          
+          <div class="masculino">
+            <input type="radio" id="masculino">
+            <label for="masculino">Masculino</label>
+          </div>
+
+          <div class="feminino">
+            <input type="radio" id="feminino">
+            <label for="feminino">Feminino</label>
+          </div>
+
+          <div class="nao-binario">
+            <input type="radio" id="nao_binario">
+            <label for="nao_binario">Não binário</label>
+          </div>
+        </div><!--genero container-->
+
+        <div class="checks">
+          
+          <div class="first">
+            <input type="checkbox" id="check1">
+            <label for="check1">Não quero receber mensagens de marketing do Spotfy.</label>           
+          </div>
+          <div class="second">
+            <input type="checkbox" id="check2">
+            <label for="check2">Compartilhar meus dados cadastrais com os provedores de conteúdo do Spotify para fins de marketing.</label>
+          </div>
+          <div class="third">
+            <input type="checkbox" id="check3">
+            <label for="check3">Eu concordo com os <a href="https://www.spotify.com/br/legal/end-user-agreement/">Termos e condições do Spotfy.</a></label>
+          </div>                   
+        </div><!--checks-->
+        
+        <div class="inscrever-se">
+          <span>Para saber mais sobre como o Spotify coleta, utiliza, compartilha e protege seus dados pessoais, leia a <a href="https://www.spotify.com/br/legal/privacy-policy/">Política de Privacidade do Spotfy.</a></span>
+          <button type="submit">INSCREVER-SE</button>
+          <span class="last-text">Já tem uma conta? <a href="http://localhost/js_projects/spotfy_flexbox/login.html">Faça Login.</a></span>
+        </div>
+
+      </div><!--form bottom-->     
+    </form>
+  </section><!--Forms container-->
+</body>
+</html>
