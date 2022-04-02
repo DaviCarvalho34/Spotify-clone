@@ -14,6 +14,10 @@
   
       $conteudo = $template->render($parametros);
       echo $conteudo;
+
+      if(isset($_POST['inscrever-se'])){
+        \Spotify\Utilidades::redirect(INCLUDE_PATH.'registrar');
+      }
     }
 
   }
