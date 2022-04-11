@@ -1,9 +1,11 @@
 <?php
+
   namespace Spotify;
   
   class Application
   {
     private $controller;
+    
     private function setApp()
     {
 
@@ -48,5 +50,6 @@
   	}		
 
   }
+  
 
 ?>

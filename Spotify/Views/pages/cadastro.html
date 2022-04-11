@@ -23,7 +23,7 @@
       <div class="form-top">
         <span>Inscreva-se grátis e comece a curtir.</span>
         <button class="botao-facebook" type="submit"><i class="fa-brands fa-facebook"></i> Inscrever-se com o facebook</i></button>        
-        <button class="botao-google" type="submit"><i class="fa-brands fa-google"></i> Inscrever-se com o google</i></button>        
+        <button class="botao-google" href='{{authUrl}}' name="botao-google" type="submit"><i class="fa-brands fa-google"></i> Inscrever-se com o google</i></button>        
       </div><!--form top-->
       
       <div class="ou">
@@ -117,7 +117,7 @@
         
         <div class="inscrever-se">
           <span>Para saber mais sobre como o Spotify coleta, utiliza, compartilha e protege seus dados pessoais, leia a <a href="https://www.spotify.com/br/legal/privacy-policy/">Política de Privacidade do Spotfy.</a></span>
-          <button type="submit">INSCREVER-SE</button>
+          <button name="sign-up" type="submit">INSCREVER-SE</button>
           <input type="hidden" name="registrar">
           <span class="last-text">Já tem uma conta? <a href="{{constant('INCLUDE_PATH')}}">Faça Login.</a></span>
         </div>

@@ -6,6 +6,7 @@
   },
   "require": {
     "twig/twig": "^3.3",
-    "nesbot/carbon": "^2.57"
+    "nesbot/carbon": "^2.57",
+    "league/oauth2-google": "^4.0"
   }
 }
